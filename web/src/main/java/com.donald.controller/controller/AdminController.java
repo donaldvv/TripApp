@@ -75,14 +75,16 @@ public class AdminController {
         return new ResponseEntity<>(tripDto, HttpStatus.OK);
     }
 
-    @PostMapping("/users/{userId}")
-    @PreAuthorize("hasRole('ADMIN')")
+
+    @ApiOperation(value = "Update a user")
     @ApiResponses( value ={
             @ApiResponse(code = 201, message = "Successfully updated user with the specified Uname, Pass & Roles"),
             @ApiResponse(code = 400, message = "Admin can not remove admin role from a user"),
             @ApiResponse(code = 404, message = "User not found"),
             @ApiResponse(code = 409, message = "Username is already taken")
     })
+    @PreAuthorize("hasRole('ADMIN')")
+    @PutMapping("/users/{userId}")
     public ResponseEntity<UserDto> updateUser(@PathVariable @Min(1) Long userId,
                                               @Valid @RequestBody UserRegisterRequest updateRequest) {
         UserDto updatedUser = userService.updateUser(userId, updateRequest);

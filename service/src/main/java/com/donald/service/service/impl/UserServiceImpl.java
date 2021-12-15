@@ -84,8 +84,8 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public UserDto updateUser(Long userId, UserRegisterRequest updateRequest) {
         User oldUser = getUserWithId(userId);
-
-        verifyUsernameUnique(updateRequest.getUsername());
+        if (!updateRequest.getUsername().equals(oldUser.getUsername()))
+           verifyUsernameUnique(updateRequest.getUsername());
 
         updateRequest.setPassword(passwordEncoder.encode(updateRequest.getPassword()));
 

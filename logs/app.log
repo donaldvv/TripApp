@@ -15179,3 +15179,854 @@ javax.validation.ConstraintViolationException: getTripById.tripId: must be great
 2021-12-15 09:27:25,921 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-12-15 09:27:25,927 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2021-12-15 09:27:25,944 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-15 18:52:50,768 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-15 18:52:50,830 INFO c.d.c.TripAppApplication [restartedMain] Starting TripAppApplication using Java 11.0.5 on WIN-TJSVIOMN4KG with PID 13348 (C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp\web\target\classes started by User in C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp)
+2021-12-15 18:52:50,830 INFO c.d.c.TripAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-15 18:52:50,946 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-15 18:52:50,946 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-15 18:52:52,588 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 18:52:52,766 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 171 ms. Found 6 JPA repository interfaces.
+2021-12-15 18:52:53,972 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6048350a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:52:53,972 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:52:58,761 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 18:52:59,270 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-15 18:52:59,271 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2021-12-15 18:52:59,272 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-15 18:53:02,188 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-15 18:53:02,189 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 11243 ms
+2021-12-15 18:53:04,635 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-15 18:53:05,997 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-15 18:53:06,202 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-15 18:53:07,448 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-15 18:53:09,410 INFO o.h.a.c.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-15 18:53:11,089 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-12-15 18:53:20,194 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-15 18:53:20,221 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 18:53:21,817 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-15 18:53:25,532 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-12-15 18:53:25,533 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-12-15 18:53:25,533 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/configuration/**'] with []
+2021-12-15 18:53:25,533 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-12-15 18:53:25,534 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-12-15 18:53:25,534 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/webjars/**'] with []
+2021-12-15 18:53:25,609 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a6e8880, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c70de4b, org.springframework.security.web.header.HeaderWriterFilter@770ebc69, org.springframework.security.web.authentication.logout.LogoutFilter@104eff6b, com.donald.service.security.JwtRequestFilter@7f6c3b7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5393db7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bd0033b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ce49507, org.springframework.security.web.session.SessionManagementFilter@2ead6ce6, org.springframework.security.web.access.ExceptionTranslationFilter@1ed4ad4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46aca184]
+2021-12-15 18:53:25,859 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-15 18:53:26,229 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-12-15 18:53:26,269 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-15 18:53:27,177 INFO c.d.c.TripAppApplication [restartedMain] Started TripAppApplication in 36.855 seconds (JVM running for 40.317)
+2021-12-15 18:53:35,014 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-15 18:53:35,015 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-15 18:53:35,021 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 6 ms
+2021-12-15 18:53:35,087 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 18:53:35,459 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 18:53:35,466 ERROR c.d.s.security [http-nio-8080-exec-3] JWT token does not start with Bearer
+2021-12-15 18:53:35,494 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 18:53:35,495 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 18:53:35,505 ERROR c.d.s.security [http-nio-8080-exec-6] JWT token does not start with Bearer
+2021-12-15 18:53:36,060 ERROR c.d.s.security [http-nio-8080-exec-7] JWT token does not start with Bearer
+2021-12-15 18:53:36,083 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 18:53:36,206 ERROR c.d.s.security [http-nio-8080-exec-10] JWT token does not start with Bearer
+2021-12-15 18:53:36,221 ERROR c.d.s.security [http-nio-8080-exec-9] JWT token does not start with Bearer
+2021-12-15 18:53:36,405 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 18:53:36,416 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 18:53:40,329 ERROR c.d.s.security [http-nio-8080-exec-3] JWT token does not start with Bearer
+2021-12-15 18:53:42,395 ERROR c.d.s.security [http-nio-8080-exec-7] JWT token does not start with Bearer
+2021-12-15 18:53:46,354 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 18:55:43,781 ERROR c.d.s.security [http-nio-8080-exec-9] JWT token does not start with Bearer
+2021-12-15 18:55:59,101 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 18:56:12,111 ERROR c.d.s.security [http-nio-8080-exec-6] JWT token does not start with Bearer
+2021-12-15 18:56:17,096 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 18:56:44,267 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 18:59:15,826 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 18:59:15,871 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-15 18:59:15,907 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-15 18:59:35,023 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-15 18:59:35,109 INFO c.d.c.TripAppApplication [restartedMain] Starting TripAppApplication using Java 11.0.5 on WIN-TJSVIOMN4KG with PID 28908 (C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp\web\target\classes started by User in C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp)
+2021-12-15 18:59:35,117 INFO c.d.c.TripAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-15 18:59:35,243 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-15 18:59:35,244 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-15 18:59:37,507 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 18:59:37,807 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 284 ms. Found 6 JPA repository interfaces.
+2021-12-15 18:59:38,979 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1179fa26' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:59:38,987 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:59:39,523 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 18:59:39,563 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-15 18:59:39,565 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2021-12-15 18:59:39,566 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-15 18:59:40,135 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-15 18:59:40,135 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4890 ms
+2021-12-15 18:59:40,507 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-15 18:59:41,030 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-15 18:59:41,217 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-15 18:59:41,344 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-15 18:59:41,699 INFO o.h.a.c.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-15 18:59:41,973 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-12-15 18:59:44,034 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-15 18:59:44,055 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 18:59:44,971 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-15 18:59:47,206 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-12-15 18:59:47,206 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-12-15 18:59:47,206 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/configuration/**'] with []
+2021-12-15 18:59:47,207 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-12-15 18:59:47,207 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-12-15 18:59:47,207 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/webjars/**'] with []
+2021-12-15 18:59:47,279 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@362b3848, org.springframework.security.web.context.SecurityContextPersistenceFilter@31d79865, org.springframework.security.web.header.HeaderWriterFilter@77fe1c45, org.springframework.security.web.authentication.logout.LogoutFilter@68b3f341, com.donald.service.security.JwtRequestFilter@4e246297, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d87c13a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f9196b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18cb20ec, org.springframework.security.web.session.SessionManagementFilter@518696f7, org.springframework.security.web.access.ExceptionTranslationFilter@778aca3f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@298a8918]
+2021-12-15 18:59:47,507 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-15 18:59:47,871 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-12-15 18:59:47,902 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-15 18:59:48,670 INFO c.d.c.TripAppApplication [restartedMain] Started TripAppApplication in 14.532 seconds (JVM running for 18.846)
+2021-12-15 18:59:53,159 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-15 18:59:53,159 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-15 18:59:53,163 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-12-15 18:59:53,220 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 18:59:57,810 ERROR c.d.s.security [http-nio-8080-exec-3] JWT token does not start with Bearer
+2021-12-15 18:59:57,934 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 18:59:57,934 ERROR c.d.s.security [http-nio-8080-exec-6] JWT token does not start with Bearer
+2021-12-15 18:59:57,935 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 18:59:57,939 ERROR c.d.s.security [http-nio-8080-exec-7] JWT token does not start with Bearer
+2021-12-15 18:59:57,940 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 18:59:58,594 ERROR c.d.s.security [http-nio-8080-exec-9] JWT token does not start with Bearer
+2021-12-15 18:59:58,601 ERROR c.d.s.security [http-nio-8080-exec-10] JWT token does not start with Bearer
+2021-12-15 18:59:58,733 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 18:59:58,751 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 18:59:58,969 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 18:59:58,973 ERROR c.d.s.security [http-nio-8080-exec-3] JWT token does not start with Bearer
+2021-12-15 19:00:02,980 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 19:00:05,834 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 19:00:09,762 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 19:00:22,106 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 19:00:47,066 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 19:00:55,777 ERROR c.d.s.security [http-nio-8080-exec-10] JWT token does not start with Bearer
+2021-12-15 19:00:59,324 ERROR c.d.s.security [http-nio-8080-exec-1] JWT token does not start with Bearer
+2021-12-15 19:01:02,793 ERROR c.d.s.security [http-nio-8080-exec-7] JWT token does not start with Bearer
+2021-12-15 19:01:16,238 ERROR c.d.s.security [http-nio-8080-exec-3] JWT token does not start with Bearer
+2021-12-15 19:02:39,396 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 19:02:41,592 ERROR c.d.s.security [http-nio-8080-exec-8] JWT token does not start with Bearer
+2021-12-15 19:02:44,233 ERROR c.d.s.security [http-nio-8080-exec-6] JWT token does not start with Bearer
+2021-12-15 19:02:50,142 ERROR c.d.s.security [http-nio-8080-exec-9] JWT token does not start with Bearer
+2021-12-15 19:03:09,182 ERROR c.d.s.security [http-nio-8080-exec-7] JWT token does not start with Bearer
+2021-12-15 19:03:12,033 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 19:03:17,801 ERROR c.d.s.security [http-nio-8080-exec-5] JWT token does not start with Bearer
+2021-12-15 19:03:24,252 ERROR c.d.s.security [http-nio-8080-exec-4] JWT token does not start with Bearer
+2021-12-15 19:03:32,924 ERROR c.d.s.security [http-nio-8080-exec-6] JWT token does not start with Bearer
+2021-12-15 19:04:29,757 ERROR c.d.s.security [http-nio-8080-exec-9] JWT token does not start with Bearer
+2021-12-15 19:06:05,648 ERROR c.d.s.security [http-nio-8080-exec-2] JWT token does not start with Bearer
+2021-12-15 19:06:05,788 DEBUG o.h.SQL [http-nio-8080-exec-2] 
+    select
+        refreshtok0_.id as id1_2_,
+        refreshtok0_.expiration as expirati2_2_,
+        refreshtok0_.token as token3_2_,
+        refreshtok0_.user_id as user_id4_2_ 
+    from
+        refreshtokens refreshtok0_ 
+    where
+        refreshtok0_.token=?
+2021-12-15 19:06:05,821 DEBUG o.h.SQL [http-nio-8080-exec-2] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:06:32,090 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:06:32,097 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:06:32,172 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:06:32,274 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:06:32,292 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        nextval ('user_sequence')
+2021-12-15 19:06:32,318 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    insert 
+    into
+        users
+        (password, username, id) 
+    values
+        (?, ?, ?)
+2021-12-15 19:06:32,330 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:08:15,468 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:08:15,469 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:08:15,490 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:08:15,493 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:08:15,495 ERROR c.d.t.service [http-nio-8080-exec-4] User with username test3, already exists. Can't register/update this user
+2021-12-15 19:08:15,512 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.donald.service.exception.ConflictException: User with username test3, already exists. Provide another request with different username]
+2021-12-15 19:08:51,479 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:08:51,480 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:08:51,488 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:08:51,490 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:08:51,491 ERROR c.d.t.service [http-nio-8080-exec-6] User with username test3, already exists. Can't register/update this user
+2021-12-15 19:08:51,493 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [com.donald.service.exception.ConflictException: User with username test3, already exists. Provide another request with different username]
+2021-12-15 19:27:13,344 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 19:27:13,351 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-15 19:27:13,416 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-15 19:27:30,109 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-15 19:27:30,109 INFO c.d.c.TripAppApplication [restartedMain] Starting TripAppApplication using Java 11.0.5 on WIN-TJSVIOMN4KG with PID 21156 (C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp\web\target\classes started by User in C:\Users\User\Desktop\JavaPrograms\Tutorials\TripApp)
+2021-12-15 19:27:30,132 INFO c.d.c.TripAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-15 19:27:30,295 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-15 19:27:30,295 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-15 19:27:32,892 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 19:27:33,147 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 239 ms. Found 6 JPA repository interfaces.
+2021-12-15 19:27:34,358 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7029cb56' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 19:27:34,366 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 19:27:35,050 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 19:27:35,068 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-15 19:27:35,068 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2021-12-15 19:27:35,069 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-15 19:27:35,340 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-15 19:27:35,341 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5045 ms
+2021-12-15 19:27:35,610 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-15 19:27:36,046 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-15 19:27:36,205 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-15 19:27:36,333 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-15 19:27:36,877 INFO o.h.a.c.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-15 19:27:37,154 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-12-15 19:27:39,040 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-15 19:27:39,088 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 19:27:40,097 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-15 19:27:42,074 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-12-15 19:27:42,074 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-12-15 19:27:42,074 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/configuration/**'] with []
+2021-12-15 19:27:42,075 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-12-15 19:27:42,075 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-12-15 19:27:42,075 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Mvc [pattern='/webjars/**'] with []
+2021-12-15 19:27:42,143 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4001299e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bd55ded, org.springframework.security.web.header.HeaderWriterFilter@244a75ae, org.springframework.security.web.authentication.logout.LogoutFilter@7f354737, com.donald.service.security.JwtRequestFilter@233a603b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@469e93b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d144fa1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a69ecd8, org.springframework.security.web.session.SessionManagementFilter@59c21035, org.springframework.security.web.access.ExceptionTranslationFilter@112754c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b62befc]
+2021-12-15 19:27:42,359 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-15 19:27:42,764 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-12-15 19:27:42,795 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-15 19:27:43,443 INFO c.d.c.TripAppApplication [restartedMain] Started TripAppApplication in 14.451 seconds (JVM running for 18.705)
+2021-12-15 19:27:53,061 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-15 19:27:53,062 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-15 19:27:53,065 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-12-15 19:27:53,270 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:27:53,334 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:27:53,740 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:27:53,751 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:27:53,887 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:27:53,893 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:27:53,895 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:27:53,936 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    update
+        users 
+    set
+        password=?,
+        username=? 
+    where
+        id=?
+2021-12-15 19:27:53,959 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    delete 
+    from
+        user_roles 
+    where
+        user_id=?
+2021-12-15 19:27:53,962 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:27:53,966 DEBUG o.h.SQL [http-nio-8080-exec-1] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:17,903 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:28:17,904 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:28:17,914 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:28:17,918 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:28:18,053 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:18,056 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:18,058 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:18,061 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    update
+        users 
+    set
+        password=?,
+        username=? 
+    where
+        id=?
+2021-12-15 19:28:18,065 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    delete 
+    from
+        user_roles 
+    where
+        user_id=?
+2021-12-15 19:28:18,067 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:18,068 DEBUG o.h.SQL [http-nio-8080-exec-3] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:32,385 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:28:32,386 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:28:32,392 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:28:32,394 DEBUG o.h.SQL [http-nio-8080-exec-4] 
+    select
+        user0_.id as col_0_0_ 
+    from
+        users user0_ 
+    where
+        user0_.username=? limit ?
+2021-12-15 19:28:32,396 ERROR c.d.t.service [http-nio-8080-exec-4] User with username test11, already exists. Can't register/update this user
+2021-12-15 19:28:32,409 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.donald.service.exception.ConflictException: User with username test11, already exists. Provide another request with different username]
+2021-12-15 19:28:40,457 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:28:40,459 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:28:40,466 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:28:40,556 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:40,558 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:40,559 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:40,562 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    update
+        users 
+    set
+        password=?,
+        username=? 
+    where
+        id=?
+2021-12-15 19:28:40,563 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    delete 
+    from
+        user_roles 
+    where
+        user_id=?
+2021-12-15 19:28:40,564 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:40,566 DEBUG o.h.SQL [http-nio-8080-exec-5] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:46,232 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:28:46,233 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:28:46,241 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:28:46,333 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:46,335 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:46,336 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:46,337 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    update
+        users 
+    set
+        password=?,
+        username=? 
+    where
+        id=?
+2021-12-15 19:28:46,340 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    delete 
+    from
+        user_roles 
+    where
+        user_id=?
+2021-12-15 19:28:46,341 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:46,341 DEBUG o.h.SQL [http-nio-8080-exec-6] 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2021-12-15 19:28:53,025 DEBUG o.h.SQL [http-nio-8080-exec-7] 
+    select
+        user0_.id as id1_6_,
+        user0_.password as password2_6_,
+        user0_.username as username3_6_ 
+    from
+        users user0_ 
+    where
+        user0_.username=?
+2021-12-15 19:28:53,026 DEBUG o.h.SQL [http-nio-8080-exec-7] 
+    select
+        roles0_.user_id as user_id1_5_0_,
+        roles0_.role_id as role_id2_5_0_,
+        role1_.id as id1_3_1_,
+        role1_.name as name2_3_1_ 
+    from
+        user_roles roles0_ 
+    inner join
+        roles role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.user_id=?
+2021-12-15 19:28:53,031 DEBUG o.h.SQL [http-nio-8080-exec-7] 
+    select
+        user0_.id as id1_6_0_,
+        user0_.password as password2_6_0_,
+        user0_.username as username3_6_0_,
+        roles1_.user_id as user_id1_5_1_,
+        role2_.id as role_id2_5_1_,
+        role2_.id as id1_3_2_,
+        role2_.name as name2_3_2_ 
+    from
+        users user0_ 
+    left outer join
+        user_roles roles1_ 
+            on user0_.id=roles1_.user_id 
+    left outer join
+        roles role2_ 
+            on roles1_.role_id=role2_.id 
+    where
+        user0_.id=?
+2021-12-15 19:28:53,123 DEBUG o.h.SQL [http-nio-8080-exec-7] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:53,124 DEBUG o.h.SQL [http-nio-8080-exec-7] 
+    select
+        role0_.id as id1_3_,
+        role0_.name as name2_3_ 
+    from
+        roles role0_ 
+    where
+        role0_.name=?
+2021-12-15 19:28:53,125 ERROR c.d.t.service [http-nio-8080-exec-7] Admin can not remove role: ROLE_ADMIN, from users
+2021-12-15 19:28:53,127 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [com.donald.service.exception.BadRequestException: Admin can not remove role: ROLE_ADMIN, from users]
