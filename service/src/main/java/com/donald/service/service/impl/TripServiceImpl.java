@@ -108,7 +108,7 @@ public class TripServiceImpl implements TripService {
         verifyTripNonApproved(oldTrip);
 
         List<Trip> overlapingTrips = tripRepository.findTripsOfUserByDatesOverlap(user, departureDate, arrivalDate);
-        if (overlapingTrips.isEmpty()) {
+        if (overlapingTrips.isEmpty() || (overlapingTrips.size()==1 && overlapingTrips.get(0).getId().equals(tripId))) {
             Trip tripToSave = tripMapper.tripCreateToTrip(updateRequest);
             tripToSave.setId(oldTrip.getId());
             setReasonEnumToTrip(tripToSave, updateRequest);

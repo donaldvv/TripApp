@@ -3,9 +3,12 @@ package com.donald.service;
 
 import com.donald.service.dto.entity.UserDto;
 import com.donald.service.dto.page.PagedResponse;
+import com.donald.service.dto.request.UserRegisterRequest;
+import com.donald.service.exception.ConflictException;
 import com.donald.service.exception.EntityNotFoundException;
 import com.donald.service.mapper.UserMapper;
 import com.donald.service.model.User;
+import com.donald.service.model.enums.Role;
 import com.donald.service.repository.RoleRepository;
 import com.donald.service.repository.UserRepository;
 import com.donald.service.service.impl.UserServiceImpl;
@@ -25,13 +28,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import uk.co.jemos.podam.api.PodamFactory;
 import uk.co.jemos.podam.api.PodamFactoryImpl;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 @ExtendWith(MockitoExtension.class)
@@ -49,6 +50,9 @@ class TestUserServiceImpl {
     @InjectMocks
     private UserServiceImpl userService;
 
+    @Captor
+    private ArgumentCaptor<User> userArgumentCaptor;
+
     private PodamFactory podamFactory;
 
     @BeforeEach
@@ -62,8 +66,8 @@ class TestUserServiceImpl {
     void getUserById() {
         User user = new User(1L, "donald", "donald", new HashSet<>(), new ArrayList<>());
         UserDto userDto = new UserDto(1L, "donald", new HashSet<>());
-        Mockito.when(userRepository.findById(1L)).thenReturn(Optional.of(user));
-        Mockito.when(userMapper.userToUserDto(user)).thenReturn(userDto);
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(userMapper.userToUserDto(user)).thenReturn(userDto);
 
         UserDto resp = userService.getUserById(1L);
         assertEquals(resp, userDto);
@@ -72,7 +76,7 @@ class TestUserServiceImpl {
     @Test
     @DisplayName("Get user by id,  throws exception")
     void getUserById_throwsException() {
-        Mockito.when(userRepository.findById(0L)).thenReturn(Optional.empty());
+        when(userRepository.findById(0L)).thenReturn(Optional.empty());
         assertThrows(EntityNotFoundException.class, () -> {
             userService.getUserById(0L);
         });
@@ -85,23 +89,49 @@ class TestUserServiceImpl {
         int pageSize = 2;
         Pageable paging = PageRequest.of(pageNo, pageSize);
 
-        UserDto userDto = new UserDto(1L, "donald", new HashSet<>());
-        List<UserDto> listaDto= new ArrayList<>();
+        UserDto userDto = mock(UserDto.class); /*new UserDto(1L, "donald", new HashSet<>());*/
+        List<UserDto> listaDto = new ArrayList<>();
         listaDto.add(userDto);
-        User user = new User(1L, "donald", "donald", new HashSet<>(), new ArrayList<>());
+        User user = mock(User.class);  /*new User(1L, "donald", "donald", new HashSet<>(), new ArrayList<>());*/
 
         List<User> lista= new ArrayList<>();
         lista.add(user);
         Page<User> page = new PageImpl<>(lista);
 
-        Mockito.when(userRepository.findAll(paging)).thenReturn(page);
-        Mockito.when(userMapper.usersToUserDtos(lista)).thenReturn(listaDto);
+        when(userRepository.findAll(paging)).thenReturn(page);
+        when(userMapper.usersToUserDtos(lista)).thenReturn(listaDto);
 
         PagedResponse<UserDto> response = userService.getAllUsers(pageNo, pageSize);
 
-        assertEquals(response.getContent().size(), 1);
+        assertEquals(1, response.getContent().size());
 
     }
 
+    @Test
+    void shouldRegisterUserSuccessfully() {
+        UserRegisterRequest registerRequest = mock(UserRegisterRequest.class);
+        registerRequest.setUsername("A");
+        registerRequest.setRoles(new ArrayList<>(List.of("ROLE_ADMIN")));
+
+        User user = mock(User.class);
+        user.setUsername("A");
+        when(userMapper.registerRequestToUser(registerRequest)).thenReturn(user);
+
+        userService.registerNewUser(registerRequest);
+
+        verify(userRepository, Mockito.times(1)).save(userArgumentCaptor.capture());
+    }
+
+
+    @Test
+    void shouldThrowWhenRegisteringUserWithTakenUsername() {
+        UserRegisterRequest request = podamFactory.manufacturePojo(UserRegisterRequest.class);
+
+        when(userRepository.existsByUsername(request.getUsername())).thenReturn(true);
+
+        assertThrows(ConflictException.class, () -> {
+            userService.registerNewUser(request);
+        });
+    }
 
 }
